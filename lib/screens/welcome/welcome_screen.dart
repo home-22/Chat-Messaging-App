@@ -1,5 +1,5 @@
+import 'package:chat/screens/signinOrSingUp/signin_or_signup_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:chat/screens/signinOrSingUp/signin_or_SingnUp_screens.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);

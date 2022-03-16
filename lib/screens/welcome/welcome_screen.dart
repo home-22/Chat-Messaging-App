@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:chat/screens/signinOrSingUp/signinOrSingnUp.dart';
+import 'package:chat/screens/signinOrSingUp/signin_or_SingnUp_screens.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
               textAlign: TextAlign.center,
               // style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            const Spacer(flex: 3),
+            const Spacer(flex: 18), //3
             FittedBox(
               child: TextButton(
                   onPressed: () => Navigator.push(

@@ -10,6 +10,7 @@ class PrimaryButton extends StatelessWidget {
   }) : super(key: key);
   final String text;
   final VoidCallback press;
+  // ignore: prefer_typing_uninitialized_variables
   final color;
 
   @override

@@ -1,6 +1,7 @@
-import 'package:chat/constants.dart';
-import 'package:chat/models/chat.dart';
+import 'package:chat/models/Chat.dart';
 import 'package:flutter/material.dart';
+
+import '../../../constants.dart';
 
 class ChatCard extends StatelessWidget {
   const ChatCard({
@@ -17,8 +18,8 @@ class ChatCard extends StatelessWidget {
     return InkWell(
       onTap: press,
       child: Padding(
-        padding:
-            const EdgeInsets.symmetric(horizontal: 20, vertical: 20 * 0.75),
+        padding: const EdgeInsets.symmetric(
+            horizontal: kDefaultPadding, vertical: kDefaultPadding * 0.75),
         child: Row(
           children: [
             Stack(
@@ -47,7 +48,8 @@ class ChatCard extends StatelessWidget {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

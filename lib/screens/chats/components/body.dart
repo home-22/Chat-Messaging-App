@@ -1,7 +1,6 @@
 import 'package:chat/components/filled_outline_button.dart';
 import 'package:chat/constants.dart';
 import 'package:chat/models/Chat.dart';
-import 'package:chat/screens/messages/messages_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -15,12 +14,13 @@ class Body extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+          padding: const EdgeInsets.fromLTRB(
+              kDefaultPadding, 0, kDefaultPadding, kDefaultPadding),
           color: kPrimaryColor,
           child: Row(
             children: [
               FillOutlineButton(press: () {}, text: 'Recent Message'),
-              const SizedBox(width: 20),
+              const SizedBox(width: kDefaultPadding),
               FillOutlineButton(
                 press: () {},
                 text: 'Active',
@@ -31,17 +31,11 @@ class Body extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
-            itemCount: chatsData.length,
-            itemBuilder: (context, index) => ChatCard(
-              chat: chatsData[index],
-              press: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const MessagesScreen(),
-                ),
-              ),
-            ),
-          ),
+              itemCount: chatsData.length,
+              itemBuilder: (context, index) => ChatCard(
+                    chat: chatsData[index],
+                    press: () {},
+                  )),
         ),
       ],
     );

@@ -54,6 +54,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
 
   AppBar buildAppBar() {
     return AppBar(
+      elevation: 0,
       backgroundColor: kPrimaryColor,
       automaticallyImplyLeading: false,
       title: const Text('Chats'),

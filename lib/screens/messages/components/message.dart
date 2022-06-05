@@ -34,11 +34,11 @@ class Message extends StatelessWidget {
             message.isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
         children: [
           if (!message.isSender) ...[
-            CircleAvatar(
+            const CircleAvatar(
               radius: 12,
               backgroundImage: AssetImage('assets/images/user_2.png'),
             ),
-            SizedBox(width: kDefaultPadding / 2),
+            const SizedBox(width: kDefaultPadding / 2),
           ],
           messageContaint(message),
           if (message.isSender) MessageStatusDot(status: message.messageStatus)

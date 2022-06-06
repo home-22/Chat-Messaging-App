@@ -1,9 +1,7 @@
 import 'package:chat/constants.dart';
 import 'package:chat/models/ChatMessage.dart';
+import 'package:chat/screens/messages/components/audio_message.dart';
 import 'package:flutter/material.dart';
-
-import '../../../constants.dart';
-import 'audio_message.dart';
 
 class Message extends StatelessWidget {
   final ChatMessage message;

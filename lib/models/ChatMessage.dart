@@ -1,4 +1,8 @@
+// ignore_for_file: file_names
+
 enum ChatMessageType { text, audio, image, video }
+
+// ignore: constant_identifier_names
 enum MessageStatus { not_sent, not_view, viewed }
 
 class ChatMessage {
